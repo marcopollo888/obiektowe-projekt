@@ -29,3 +29,11 @@ todo:
  przez kontakt bezpośredni do boostera??? beznadziejne, ale ładnie przynajmniej będzie wyglądać)
 *cztery/pięć algorytmy szyfrujące (przymusowy wybór dwóch, jeden szyfruje po drugim, kolejność trafia do pracownika który musi zdeszyfrować używając odwrotnie algorytmów?)
 *
+
+@update
+wyświetlanie pracowników w nowym oknie z pliku za pomocą przycisku z głównego okna
+dodawanie nowego pracownika
+dodanie kalendarza
+dodawanie nowych zleceń
+wyświetlanie zleceń w kalendarzu
+*
