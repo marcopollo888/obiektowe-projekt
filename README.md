@@ -37,3 +37,8 @@ dodanie kalendarza
 dodawanie nowych zleceń
 wyświetlanie zleceń w kalendarzu
 *
+@update_v2
+zlecenia z datą wpisywaną w textbox
+kalendarze
+kalendarz dostępności pracownika w przyjmowaniu zleceń
+lista wolnych terminów przy przyjmowaniu zlecenia
