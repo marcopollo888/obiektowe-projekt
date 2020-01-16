@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="728,95,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.316,3.593"/>
+        <Button x:Name="Zlecenia" Content="Zlecenia" HorizontalAlignment="Left" Margin="644,105,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.316,3.593" Click="Zlecenia_Click"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="728,120,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="Wyświetl_pracowników" Content="Wyświetl pracowników" HorizontalAlignment="Left" Margin="644,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.708,0.399" Click="Wyświetl_pracowników_Click"/>
+        <Button x:Name="Pracownicy" Content="Pracownicy" HorizontalAlignment="Left" Margin="644,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.708,0.399" Click="Pracownicy_Click"/>
 
     </Grid>
 </Window>

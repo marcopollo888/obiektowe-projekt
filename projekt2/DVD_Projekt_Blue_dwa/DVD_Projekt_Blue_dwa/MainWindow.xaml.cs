@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
+
 
 namespace DVD_Projekt_Blue_dwa
 {
@@ -25,12 +27,16 @@ namespace DVD_Projekt_Blue_dwa
             InitializeComponent();
         }
 
-        private void Wyświetl_pracowników_Click(object sender, RoutedEventArgs e)
+        private void Pracownicy_Click(object sender, RoutedEventArgs e)
         {
             Window1 objWindow1 = new Window1();
             objWindow1.Show();
+        }
 
-            //odczyt z pliku
+        private void Zlecenia_Click(object sender, RoutedEventArgs e)
+        {
+            Okno_Zleceń objokno_Zleceń = new Okno_Zleceń();
+            objokno_Zleceń.Show();
         }
     }
 }
