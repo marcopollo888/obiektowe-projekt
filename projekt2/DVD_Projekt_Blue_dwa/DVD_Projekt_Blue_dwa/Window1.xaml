@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Center" Margin="0,184,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="158" Width="420"/>
+        <TextBox x:Name="Imię" HorizontalAlignment="Left" Margin="133,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Nazwisko" HorizontalAlignment="Left" Margin="133,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Nickname" HorizontalAlignment="Left" Margin="133,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Mail" HorizontalAlignment="Left" Margin="133,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Telefon" HorizontalAlignment="Left" Margin="133,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Imię" HorizontalAlignment="Left" Margin="58,36,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nazwisko" HorizontalAlignment="Left" Margin="58,80,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nickname" HorizontalAlignment="Left" Margin="58,120,0,0" VerticalAlignment="Top"/>
+        <Label Content="E-mail" HorizontalAlignment="Left" Margin="58,156,0,0" VerticalAlignment="Top"/>
+        <Label Content="Telefon" HorizontalAlignment="Left" Margin="58,191,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Dodaj" Content="Dodaj" HorizontalAlignment="Left" Margin="159,290,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.057,-1.825" Click="Button_Click"/>
     </Grid>
 </Window>

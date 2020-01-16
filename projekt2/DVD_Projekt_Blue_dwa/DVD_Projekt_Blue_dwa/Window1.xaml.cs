@@ -20,6 +20,17 @@ namespace DVD_Projekt_Blue_dwa
         public Window1()
         {
             InitializeComponent();
+
+        }
+
+        private void Imię_Click(object sender, EventArgs e)
+        {
+            Imię.Text = string.Empty;
+        }
+
+        private void Dodaj_Click(object sender, RoutedEventArgs e)
+        {
+            //File.WriteAllText("C:\\Users\\Marek\\Desktop\\pracownicy.db", Imię.Text + ";" + Nazwisko.Text + ";" + Nickname.Text + ";" + Mail.Text + ";" + Telefon.Text);
         }
     }
 }
