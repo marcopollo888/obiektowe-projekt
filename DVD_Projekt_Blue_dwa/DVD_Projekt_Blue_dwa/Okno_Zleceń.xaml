@@ -16,8 +16,8 @@
             <ComboBoxItem Content="coaching"/>
         </ComboBox>
         <GroupBox Header="Dywizja" Margin="586,22,141,174" FontSize="18" FontWeight="Bold" Visibility="Visible"/>
-        <Label Content="aktualny krąg" HorizontalAlignment="Left" Margin="611,55,0,0" VerticalAlignment="Top"/>
-        <GroupBox Header="dywizja" Margin="817,36,174,373"/>
+        <Label Content="aktualny dywizja" HorizontalAlignment="Left" Margin="611,55,0,0" VerticalAlignment="Top"/>
+        <GroupBox Header="numer dywizji" Margin="817,36,163,373"/>
         <CheckBox x:Name="I" Content="I" HorizontalAlignment="Left" Margin="820,61,0,0" VerticalAlignment="Top" Checked="I_Checked" RenderTransformOrigin="0.475,0.731"/>
         <CheckBox x:Name="II" Content="II" HorizontalAlignment="Left" Margin="820,81,0,0" VerticalAlignment="Top" Checked="II_Checked"/>
         <CheckBox x:Name="III" Content="III" HorizontalAlignment="Left" Margin="819,101,0,0" VerticalAlignment="Top" Checked="III_Checked"/>
@@ -44,14 +44,14 @@
             <ComboBoxItem Content="Arcymistrz" FontWeight="Bold"/>
             <ComboBoxItem Content="Pretendent" FontWeight="Bold"/>
         </ComboBox>
-        <Label Content="oczekiwana" HorizontalAlignment="Left" Margin="611,228,0,0" VerticalAlignment="Top"/>
+        <Label Content="oczekiwana dywizja" HorizontalAlignment="Left" Margin="611,228,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="mail_zleceniodawcy" HorizontalAlignment="Left" Margin="159,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="21"/>
-        <Label Content="E-mail Kontaktowy" HorizontalAlignment="Left" Margin="33,131,0,0" VerticalAlignment="Top"/>
+        <Label Content="E-mail kontaktowy" HorizontalAlignment="Left" Margin="33,131,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="lp_za_grę" HorizontalAlignment="Left" Margin="611,173,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem Content="maksymalnie 15"/>
             <ComboBoxItem Content="minimalnie 16"/>
         </ComboBox>
-        <Label Content="lp za wygraną grę" HorizontalAlignment="Left" Margin="611,147,0,0" VerticalAlignment="Top"/>
+        <Label Content="Punkty Ligowe  za wygraną grę" HorizontalAlignment="Left" Margin="611,147,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="przewidywana_cena" HorizontalAlignment="Left" Margin="780,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" Height="32" IsEnabled="False"/>
         <Label Content="Przewidywana cena" HorizontalAlignment="Left" Margin="759,211,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <Button Content="Zamawiam i płacę" HorizontalAlignment="Left" Margin="666,289

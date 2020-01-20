@@ -5,14 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DVD_Projekt_Blue_dwa"
         mc:Ignorable="d"
-        Title="Terminarz" Height="450" Width="800">
-    <Grid>
-        <Calendar Margin="46,32,571,212"/>
-        <Calendar HorizontalAlignment="Left" Margin="301,27,0,0" VerticalAlignment="Top" Height="190"/>
-        <Calendar HorizontalAlignment="Left" Margin="539,27,0,0" VerticalAlignment="Top" Height="190"/>
-        <Calendar HorizontalAlignment="Left" Margin="50,222,0,0" VerticalAlignment="Top" Height="202"/>
-        <Calendar HorizontalAlignment="Left" Margin="301,222,0,0" VerticalAlignment="Top" Height="202"/>
-        <Calendar HorizontalAlignment="Left" Margin="539,222,0,0" VerticalAlignment="Top" Height="202"/>
+        Title="Terminarz" Height="599" Width="1094">
+    <Grid Height="578">
+        <Calendar Margin="-51,27,669,217"/>
+        <Calendar HorizontalAlignment="Left" Margin="430,27,0,0" VerticalAlignment="Top" Height="190"/>
+        <Calendar HorizontalAlignment="Left" Margin="744,27,0,0" VerticalAlignment="Top" Height="190"/>
+        <Calendar HorizontalAlignment="Left" Margin="98,268,0,0" VerticalAlignment="Top" Height="202"/>
+        <Calendar HorizontalAlignment="Left" Margin="430,268,0,0" VerticalAlignment="Top" Height="202"/>
+        <Calendar HorizontalAlignment="Left" Margin="744,268,0,0" VerticalAlignment="Top" Height="202"/>
+        <TextBox HorizontalAlignment="Left" Margin="98,452,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
