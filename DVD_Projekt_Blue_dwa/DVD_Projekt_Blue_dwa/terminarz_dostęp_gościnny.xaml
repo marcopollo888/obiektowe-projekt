@@ -1,11 +1,11 @@
-﻿<Window x:Class="DVD_Projekt_Blue_dwa.Terminarz"
+﻿<Window x:Class="DVD_Projekt_Blue_dwa.terminarz_dostęp_gościnny"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DVD_Projekt_Blue_dwa"
         mc:Ignorable="d"
-        Title="Terminarz" Height="599" Width="1094">
+        Title="terminarz_dostęp_gościnny" Height="599" Width="1094">
     <Grid Height="578">
         <Calendar x:Name="kalendarz_id1" Margin="98,34,817,379" SelectionMode="MultipleRange"/>
         <Calendar x:Name="kalendarz_id2" HorizontalAlignment="Left" Margin="406,34,0,0" VerticalAlignment="Top" Height="172" SelectionMode="MultipleRange"/>
@@ -19,7 +19,6 @@
         <TextBlock HorizontalAlignment="Left" Margin="730,204,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="179"/>
         <TextBlock HorizontalAlignment="Left" Margin="406,455,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="84" Width="174"/>
         <TextBlock HorizontalAlignment="Left" Margin="730,455,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="84" Width="179"/>
-        <Button x:Name="przycisk_id1" Content="Button" HorizontalAlignment="Left" Margin="98,40,0,0" VerticalAlignment="Top" Height="159" Width="179" Click="przycisk_id1_Click"/>
 
     </Grid>
 </Window>

@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DVD_Projekt_Blue_dwa"
         mc:Ignorable="d"
-        Title="Zlecenia" Height="394" Width="984">
-    <Grid Height="514" Margin="0,0,-86,0">
+        Title="Zlecenia" Height="445" Width="984">
+    <Grid Height="514" HorizontalAlignment="Left" Width="1074">
         <Label Content="Zleceniodawca" HorizontalAlignment="Left" Margin="33,38,0,0" VerticalAlignment="Top" Height="26" Width="96"/>
         <TextBox x:Name="nick_zleceniodawcy" HorizontalAlignment="Left" Margin="159,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="21" />
         <Label Content="Usługa" HorizontalAlignment="Left" Margin="33,84,0,0" VerticalAlignment="Top" Width="107"/>
@@ -15,9 +15,9 @@
             <ComboBoxItem Content="duoq"/>
             <ComboBoxItem Content="coaching"/>
         </ComboBox>
-        <GroupBox Header="Dywizja" Margin="586,22,141,174" FontSize="18" FontWeight="Bold" Visibility="Visible"/>
+        <GroupBox Header="Dywizja" Margin="586,22,113,174" FontSize="18" FontWeight="Bold" Visibility="Visible"/>
         <Label Content="aktualny dywizja" HorizontalAlignment="Left" Margin="611,55,0,0" VerticalAlignment="Top"/>
-        <GroupBox Header="numer dywizji" Margin="817,36,163,373"/>
+        <GroupBox Header="numer dywizji" Margin="801,39,174,370"/>
         <CheckBox x:Name="I" Content="I" HorizontalAlignment="Left" Margin="820,61,0,0" VerticalAlignment="Top" Checked="I_Checked" RenderTransformOrigin="0.475,0.731"/>
         <CheckBox x:Name="II" Content="II" HorizontalAlignment="Left" Margin="820,81,0,0" VerticalAlignment="Top" Checked="II_Checked"/>
         <CheckBox x:Name="III" Content="III" HorizontalAlignment="Left" Margin="819,101,0,0" VerticalAlignment="Top" Checked="III_Checked"/>
@@ -56,7 +56,7 @@
         <Label Content="Przewidywana cena" HorizontalAlignment="Left" Margin="759,211,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <Button Content="Zamawiam i płacę" HorizontalAlignment="Left" Margin="666,289
                 ,0,0" VerticalAlignment="Top" Height="42" Width="183" FontSize="16"/>
-
-
+        <Button x:Name="wybierz_termin" Content="Wybierz termin" HorizontalAlignment="Left" Margin="159,181,0,0" VerticalAlignment="Top" Click="wybierz_termin_Click"/>
+        <Calendar x:Name="kalendarz_zleceń" HorizontalAlignment="Left" Margin="159,207,0,0" VerticalAlignment="Top" Visibility="Visible"/>
     </Grid>
 </Window>

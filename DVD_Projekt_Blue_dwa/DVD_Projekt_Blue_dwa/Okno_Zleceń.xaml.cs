@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Linq;
 
 namespace DVD_Projekt_Blue_dwa
 {
@@ -101,6 +102,13 @@ namespace DVD_Projekt_Blue_dwa
             }
 
         }
+
+        private void wybierz_termin_Click(object sender, RoutedEventArgs e)
+        {
+            Terminarz objTerminarz = new Terminarz();
+            objTerminarz.Show();
+        }
+
 
     }
 }

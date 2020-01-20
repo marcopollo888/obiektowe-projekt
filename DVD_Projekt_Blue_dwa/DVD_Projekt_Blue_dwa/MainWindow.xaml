@@ -8,8 +8,7 @@
         Title="Okno główne" Height="450" Width="800">
     <Grid>
         <Button x:Name="Zlecenia" Content="Zlecenia" HorizontalAlignment="Left" Margin="564,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.316,3.593" Click="Zlecenia_Click" Width="63"/>
-        <Button Content="Terminarz" HorizontalAlignment="Left" Margin="564,90,0,0" VerticalAlignment="Top" Click="Button_Click" RenderTransformOrigin="0.326,0.742" Width="63"/>
-        <Button x:Name="blabla" Content="Pracownicy" HorizontalAlignment="Left" Margin="564,44,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.708,0.399" Click="Pracownicy_Click"/>
-
+        <Button x:Name="Pracownicy" Content="Pracownicy" HorizontalAlignment="Left" Margin="564,44,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.708,0.399" Click="Pracownicy_Click"/>
+        <Button x:Name="terminarz_guest" Content="Terminarz dostęp gościnny" HorizontalAlignment="Left" Margin="475,91,0,0" VerticalAlignment="Top" Width="152" Click="terminarz_guest_Click"/>
     </Grid>
 </Window>

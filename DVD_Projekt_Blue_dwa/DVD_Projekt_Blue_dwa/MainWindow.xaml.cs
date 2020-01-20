@@ -35,7 +35,6 @@ namespace DVD_Projekt_Blue_dwa
             Window1 objWindow1 = new Window1();
             do
             {
-
                 string poszukiwane_id = "@" + i + ".";
                 if (!File.ReadAllText(path).Contains(poszukiwane_id))
                 {
@@ -43,7 +42,7 @@ namespace DVD_Projekt_Blue_dwa
                     licznik++;
                 }
                 i++;
-            } while (i!=6 || licznik != 1);
+            } while (i!=6 && licznik != 1);
             if (File.ReadAllText(path).Contains("@6."))
              {
                 MessageBox.Show("Uruchamiam pokazywanie zespołu, jednak nabór zostaje wyłączony, ze względu na limit miejsc");
@@ -57,10 +56,10 @@ namespace DVD_Projekt_Blue_dwa
             objokno_Zleceń.Show();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void terminarz_guest_Click(object sender, RoutedEventArgs e)
         {
-            Terminarz objTerminarz = new Terminarz();
-            objTerminarz.Show();
+            terminarz_dostęp_gościnny objTerminarz_guest = new terminarz_dostęp_gościnny();
+            objTerminarz_guest.Show();
         }
     }
 }

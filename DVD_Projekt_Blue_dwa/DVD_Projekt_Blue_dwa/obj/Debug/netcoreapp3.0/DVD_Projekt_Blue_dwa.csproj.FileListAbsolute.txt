@@ -155,3 +155,5 @@ C:\Users\Marek\Desktop\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt
 C:\Users\Marek\Desktop\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt_Blue_dwa\obj\Debug\netcoreapp3.0\DVD_Projekt_Blue_dwa.AssemblyInfo.cs
 C:\Users\Marek\Desktop\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt_Blue_dwa\obj\Debug\netcoreapp3.0\DVD_Projekt_Blue_dwa.dll
 C:\Users\Marek\Desktop\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt_Blue_dwa\obj\Debug\netcoreapp3.0\DVD_Projekt_Blue_dwa.pdb
+C:\Users\Marek\Desktop\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt_Blue_dwa\obj\Debug\netcoreapp3.0\terminarz_dostęp_gościnny.g.cs
+C:\Users\Marek\Desktop\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt_Blue_dwa\obj\Debug\netcoreapp3.0\terminarz_dostęp_gościnny.baml
