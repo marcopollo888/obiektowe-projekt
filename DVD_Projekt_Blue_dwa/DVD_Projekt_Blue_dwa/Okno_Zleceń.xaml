@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DVD_Projekt_Blue_dwa"
         mc:Ignorable="d"
-        Title="Okno_Zleceń" Height="394" Width="984">
+        Title="Zlecenia" Height="394" Width="984">
     <Grid Height="514" Margin="0,0,-86,0">
         <Label Content="Zleceniodawca" HorizontalAlignment="Left" Margin="33,38,0,0" VerticalAlignment="Top" Height="26" Width="96"/>
         <TextBox x:Name="nick_zleceniodawcy" HorizontalAlignment="Left" Margin="159,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="21" />
@@ -47,8 +47,6 @@
         <Label Content="oczekiwana" HorizontalAlignment="Left" Margin="611,228,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="mail_zleceniodawcy" HorizontalAlignment="Left" Margin="159,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="21"/>
         <Label Content="E-mail Kontaktowy" HorizontalAlignment="Left" Margin="33,131,0,0" VerticalAlignment="Top"/>
-        <Label Content="Coś z datą wykombinować + lista dostępnych pracowników + pokazywanie tego z prawej po wybraniu usługi" HorizontalAlignment="Left" Margin="0,184,0,0" VerticalAlignment="Top"/>
-        <Label Content="Dodać kalkulator z prawej, submit (wersja dla coachingu jeszcze, ale to proste) i jazda z kalendarzem !!!!!!!!" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="lp_za_grę" HorizontalAlignment="Left" Margin="611,173,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem Content="maksymalnie 15"/>
             <ComboBoxItem Content="minimalnie 16"/>

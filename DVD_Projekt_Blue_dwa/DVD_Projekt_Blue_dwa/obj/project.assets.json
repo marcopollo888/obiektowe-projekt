@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marek\\Desktop\\tensiesmiejektosiesmiejeostatni-master\\DVD_Projekt_Blue_dwa\\DVD_Projekt_Blue_dwa\\DVD_Projekt_Blue_dwa.csproj",
+      "projectUniqueName": "C:\\Users\\Marek\\Desktop\\obiektowe-projekt-master\\DVD_Projekt_Blue_dwa\\DVD_Projekt_Blue_dwa\\DVD_Projekt_Blue_dwa.csproj",
       "projectName": "DVD_Projekt_Blue_dwa",
-      "projectPath": "C:\\Users\\Marek\\Desktop\\tensiesmiejektosiesmiejeostatni-master\\DVD_Projekt_Blue_dwa\\DVD_Projekt_Blue_dwa\\DVD_Projekt_Blue_dwa.csproj",
+      "projectPath": "C:\\Users\\Marek\\Desktop\\obiektowe-projekt-master\\DVD_Projekt_Blue_dwa\\DVD_Projekt_Blue_dwa\\DVD_Projekt_Blue_dwa.csproj",
       "packagesPath": "C:\\Users\\Marek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marek\\Desktop\\tensiesmiejektosiesmiejeostatni-master\\DVD_Projekt_Blue_dwa\\DVD_Projekt_Blue_dwa\\obj\\",
+      "outputPath": "C:\\Users\\Marek\\Desktop\\obiektowe-projekt-master\\DVD_Projekt_Blue_dwa\\DVD_Projekt_Blue_dwa\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Marek\\AppData\\Roaming\\NuGet\\NuGet.Config",
