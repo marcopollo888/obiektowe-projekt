@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Linq;
+using System.Windows.Forms;
 
 namespace DVD_Projekt_Blue_dwa
 {
@@ -17,7 +18,7 @@ namespace DVD_Projekt_Blue_dwa
     /// Logika interakcji dla klasy Okno_Zleceń.xaml
     /// </summary>
     public partial class Okno_Zleceń : Window
-    {
+    { 
         double dywizja_żelazo = 1.5;
         double dywizja_brąz = 2;
         double dywizja_srebro = 2.5;
@@ -30,10 +31,10 @@ namespace DVD_Projekt_Blue_dwa
         double kwota_początkowa;
         double kwota_od_zera;
         double przelicznik;
-
         public Okno_Zleceń()
         {
             InitializeComponent();
+
         }
 
         private void I_Checked(object sender, RoutedEventArgs e)
@@ -107,9 +108,11 @@ namespace DVD_Projekt_Blue_dwa
         {
             Terminarz objTerminarz = new Terminarz();
             objTerminarz.Show();
+           // if(objTerminarz.zmienna == 1)
+           // {
+          //      kalendarz_zleceń.BlackoutDates.Add(new CalendarDateRange(DateTime.Today, DateTime.Today.AddDays(1)));
+           // }
         }
-
-
     }
 }
 

@@ -7,7 +7,11 @@
         mc:Ignorable="d"
         Title="Terminarz" Height="599" Width="1094">
     <Grid Height="578">
-        <Calendar x:Name="kalendarz_id1" Margin="98,34,817,379" SelectionMode="MultipleRange"/>
+        <Calendar x:Name="kalendarz_id1" Margin="98,34,817,379" SelectionMode="MultipleRange">
+            <Calendar.BlackoutDates>
+                <CalendarDateRange Start="01.13.2020" End="01.19.2020" />
+            </Calendar.BlackoutDates>
+        </Calendar>
         <Calendar x:Name="kalendarz_id2" HorizontalAlignment="Left" Margin="406,34,0,0" VerticalAlignment="Top" Height="172" SelectionMode="MultipleRange"/>
         <Calendar x:Name="kalendarz_id3" HorizontalAlignment="Left" Margin="730,34,0,0" VerticalAlignment="Top" Height="165" SelectionMode="MultipleRange"/>
         <Calendar x:Name="kalendarz_id4" HorizontalAlignment="Left" Margin="98,289,0,0" VerticalAlignment="Top" Height="166" SelectionMode="MultipleRange"/>

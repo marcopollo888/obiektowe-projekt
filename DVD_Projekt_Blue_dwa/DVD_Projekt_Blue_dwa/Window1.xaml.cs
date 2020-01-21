@@ -26,7 +26,10 @@ namespace DVD_Projekt_Blue_dwa
 
         private void Dodaj_Click(object sender, RoutedEventArgs e)
         {
+            int i = 1;
+            int licznik = 0;
             var path = System.IO.Path.Combine(Directory.GetCurrentDirectory() + "\\pracownicy.db");
+            var path_2 = System.IO.Path.Combine(Directory.GetCurrentDirectory() + "\\pracownicy_bez_wrażliwych_danych.db");
 
             if ( Imię.Text == "" || Nazwisko.Text == "" || Nickname.Text == "" || Mail.Text == "" || Telefon.Text == "" || Dywizja.Text == "")
             {
@@ -42,6 +45,7 @@ namespace DVD_Projekt_Blue_dwa
                 {
                     string newLine = Environment.NewLine;
                     File.AppendAllText(path, id_pracownika.Text +"; " + Imię.Text + "; " + Nazwisko.Text + "; " + Nickname.Text + "; " + Dywizja.Text + "; " + Mail.Text + "; " + Telefon.Text + newLine);
+                    File.AppendAllText(path_2, id_pracownika.Text + "; " + Nickname.Text + "; " + Dywizja.Text + newLine);
                     MessageBox.Show("Dodano nowego pracownika.");
                     Imię.Text = null;
                     Nazwisko.Text = null;
@@ -49,6 +53,23 @@ namespace DVD_Projekt_Blue_dwa
                     Mail.Text = null;
                     Telefon.Text = null;
                     Dywizja.Text = null;
+
+                    do
+                    {
+                        string poszukiwane_id = "@" + i + ".";
+                        if (!File.ReadAllText(path).Contains(poszukiwane_id))
+                        {
+                            id_pracownika.Text = poszukiwane_id;
+                            licznik++;
+                        }
+                        i++;
+                    } while (i != 7 && licznik != 1);
+                    if (File.ReadAllLines(path).Length >= 6)
+                    {
+                        MessageBox.Show("Uruchamiam pokazywanie zespołu, jednak nabór zostaje wyłączony, ze względu na limit miejsc");
+                        id_pracownika = null;
+                    }
+
                 }
 
             }
@@ -61,5 +82,9 @@ namespace DVD_Projekt_Blue_dwa
             Wyświetlenie_pracowników.Text = File.ReadAllText(path);
         }
 
+        private void usuń_pracownika_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

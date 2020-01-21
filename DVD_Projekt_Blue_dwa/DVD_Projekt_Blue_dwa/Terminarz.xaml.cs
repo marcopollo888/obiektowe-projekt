@@ -17,10 +17,10 @@ namespace DVD_Projekt_Blue_dwa
     /// </summary>
     public partial class Terminarz : Window
     {
+        int zmienna;
         public Terminarz()
         {
-            InitializeComponent();           
-            kalendarz_id1.BlackoutDates.Add(new CalendarDateRange(DateTime.Today, DateTime.Today.AddDays(1)));
+            InitializeComponent();
             kalendarz_id2.BlackoutDates.Add(new CalendarDateRange(DateTime.Today, DateTime.Today.AddDays(1)));
             kalendarz_id3.BlackoutDates.Add(new CalendarDateRange(DateTime.Today, DateTime.Today.AddDays(1)));
             kalendarz_id4.BlackoutDates.Add(new CalendarDateRange(DateTime.Today, DateTime.Today.AddDays(1)));
@@ -28,13 +28,36 @@ namespace DVD_Projekt_Blue_dwa
             kalendarz_id6.BlackoutDates.Add(new CalendarDateRange(DateTime.Today, DateTime.Today.AddDays(1)));
         }
 
-        public void przycisk_id1_Click(object sender, RoutedEventArgs e)
+        private void przycisk_id1_Click(object sender, RoutedEventArgs e)
         {
-            Okno_Zleceń objokno_Zleceń = new Okno_Zleceń();
-            objokno_Zleceń.kalendarz_zleceń.BlackoutDates.Add(new CalendarDateRange(DateTime.Today, DateTime.Today.AddDays(1)));
-            //this.NavigationService.Navigate(new Uri("Okno_Zleceń.xaml", UriKind.Relative));
-            //objokno_Zleceń.Items.Refresh();
+            zmienna = 1;
             this.Close();
         }
+        /* public void przycisk_id2_Click(object sender, RoutedEventArgs e)
+         {
+             zmienna = 2;
+             this.Close();
+         }
+         public void przycisk_id3_Click(object sender, RoutedEventArgs e)
+         {
+             zmienna = 3;
+             this.Close();
+         }
+         public void przycisk_id4_Click(object sender, RoutedEventArgs e)
+         {
+             zmienna = 4;
+             this.Close();
+         }
+         public void przycisk_id5_Click(object sender, RoutedEventArgs e)
+         {
+             zmienna = 5;
+             this.Close();
+         }
+         public void przycisk_id6_Click(object sender, RoutedEventArgs e)
+         {
+             zmienna = 6;
+             this.Close();
+         }
+         */
     }
 }
