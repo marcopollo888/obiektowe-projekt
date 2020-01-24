@@ -1,3 +1,4 @@
+Program znajduje się w folderze "DVD_Projekt_Blue_dwa".
 PROJEKT FIRMY ZAJMUJĄCEJ SIĘ POTRZEBAMI GRACZY (boosting)
 
 produkt - usługa którą dostarczamy na konta zleceniodawcy
