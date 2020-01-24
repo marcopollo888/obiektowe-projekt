@@ -53,6 +53,7 @@
             <ComboBoxItem Content="@5." FontWeight="Bold"/>
             <ComboBoxItem Content="@6." FontWeight="Bold"/>
         </ComboBox>
+        <Button x:Name="wracaj_do_pokeball_1" Content="Powrót" HorizontalAlignment="Left" Margin="22,10,0,0" VerticalAlignment="Top" Click="wracaj_do_pokeball_1_Click"/>
 
 
     </Grid>

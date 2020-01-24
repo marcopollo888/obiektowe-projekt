@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         Title="Okno główne" Height="450" Width="800">
     <Grid>
-        <Button x:Name="Zlecenia" Content="Zlecenia" HorizontalAlignment="Left" Margin="564,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.316,3.593" Click="Zlecenia_Click" Width="63"/>
-        <Button x:Name="Pracownicy" Content="Pracownicy" HorizontalAlignment="Left" Margin="564,44,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.708,0.399" Click="Pracownicy_Click"/>
-        <Button x:Name="terminarz_guest" Content="Terminarz dostęp gościnny" HorizontalAlignment="Left" Margin="475,91,0,0" VerticalAlignment="Top" Width="152" Click="terminarz_guest_Click"/>
+        <Button x:Name="Zlecenia" Content="Zlecenia" HorizontalAlignment="Left" Margin="564,87,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.316,3.593" Click="Zlecenia_Click" Width="83"/>
+        <Button x:Name="Pracownicy" Content="Pracownicy" HorizontalAlignment="Left" Margin="564,44,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.708,0.399" Click="Pracownicy_Click" Width="83"/>
+        <Button x:Name="Lista_Zleceń" Content="Lista Zleceń" HorizontalAlignment="Left" Margin="564,135,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.281,-0.002" Height="21" Width="83" Click="Lista_Zleceń_Click"/>
+        <Button x:Name="logowanie" Content="Zaloguj się" HorizontalAlignment="Left" Margin="431,54,0,0" VerticalAlignment="Top" Height="43" Width="85" Click="logowanie_Click"/>
     </Grid>
 </Window>

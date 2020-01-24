@@ -155,8 +155,6 @@ C:\Users\Marek\Desktop\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt
 C:\Users\Marek\Desktop\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt_Blue_dwa\obj\Debug\netcoreapp3.0\DVD_Projekt_Blue_dwa.AssemblyInfo.cs
 C:\Users\Marek\Desktop\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt_Blue_dwa\obj\Debug\netcoreapp3.0\DVD_Projekt_Blue_dwa.dll
 C:\Users\Marek\Desktop\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt_Blue_dwa\obj\Debug\netcoreapp3.0\DVD_Projekt_Blue_dwa.pdb
-C:\Users\Marek\Desktop\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt_Blue_dwa\obj\Debug\netcoreapp3.0\terminarz_dostęp_gościnny.g.cs
-C:\Users\Marek\Desktop\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt_Blue_dwa\obj\Debug\netcoreapp3.0\terminarz_dostęp_gościnny.baml
 C:\Users\No Hej\Desktop\c#\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt_Blue_dwa\bin\Debug\netcoreapp3.0\DVD_Projekt_Blue_dwa.exe
 C:\Users\No Hej\Desktop\c#\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt_Blue_dwa\bin\Debug\netcoreapp3.0\DVD_Projekt_Blue_dwa.deps.json
 C:\Users\No Hej\Desktop\c#\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt_Blue_dwa\bin\Debug\netcoreapp3.0\DVD_Projekt_Blue_dwa.runtimeconfig.json
@@ -182,3 +180,7 @@ C:\Users\No Hej\Desktop\c#\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Pro
 C:\Users\No Hej\Desktop\c#\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt_Blue_dwa\obj\Debug\netcoreapp3.0\DVD_Projekt_Blue_dwa.AssemblyInfo.cs
 C:\Users\No Hej\Desktop\c#\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt_Blue_dwa\obj\Debug\netcoreapp3.0\DVD_Projekt_Blue_dwa.dll
 C:\Users\No Hej\Desktop\c#\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt_Blue_dwa\obj\Debug\netcoreapp3.0\DVD_Projekt_Blue_dwa.pdb
+C:\Users\Marek\Desktop\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt_Blue_dwa\obj\Debug\netcoreapp3.0\Archiwum_zleceń.g.cs
+C:\Users\Marek\Desktop\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt_Blue_dwa\obj\Debug\netcoreapp3.0\Archiwum_zleceń.baml
+C:\Users\Marek\Desktop\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt_Blue_dwa\obj\Debug\netcoreapp3.0\Logowanie.g.cs
+C:\Users\Marek\Desktop\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt_Blue_dwa\obj\Debug\netcoreapp3.0\Logowanie.baml

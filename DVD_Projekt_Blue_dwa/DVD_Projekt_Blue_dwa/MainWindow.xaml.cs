@@ -30,6 +30,7 @@ namespace DVD_Projekt_Blue_dwa
         {
             int i = 1;
             int licznik = 0;
+            int log = 0;
             var path = System.IO.Path.Combine(Directory.GetCurrentDirectory() + "\\pracownicy.db");
 
             Window1 objWindow1 = new Window1();
@@ -48,18 +49,28 @@ namespace DVD_Projekt_Blue_dwa
                 MessageBox.Show("Uruchamiam pokazywanie zespołu, jednak nabór zostaje wyłączony, ze względu na limit miejsc");
             }
             objWindow1.Show();
+            this.Close();
         }
 
         private void Zlecenia_Click(object sender, RoutedEventArgs e)
         {
             Okno_Zleceń objokno_Zleceń = new Okno_Zleceń();
             objokno_Zleceń.Show();
+            this.Close();
         }
 
-        private void terminarz_guest_Click(object sender, RoutedEventArgs e)
+        private void Lista_Zleceń_Click(object sender, RoutedEventArgs e)
         {
-            terminarz_dostęp_gościnny objTerminarz_guest = new terminarz_dostęp_gościnny();
-            objTerminarz_guest.Show();
+            Archiwum_zleceń objArchiwum_zleceń = new Archiwum_zleceń();
+            objArchiwum_zleceń.Show();
+            this.Close();
+        }
+
+        private void logowanie_Click(object sender, RoutedEventArgs e)
+        {
+            Logowanie objLogowanie = new Logowanie();
+            objLogowanie.Show();
+            this.Close();
         }
     }
 }

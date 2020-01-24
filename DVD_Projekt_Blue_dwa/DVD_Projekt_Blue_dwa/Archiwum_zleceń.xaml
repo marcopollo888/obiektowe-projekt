@@ -1,0 +1,14 @@
+﻿<Window x:Class="DVD_Projekt_Blue_dwa.Archiwum_zleceń"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DVD_Projekt_Blue_dwa"
+        mc:Ignorable="d"
+        Title="Archiwum_zleceń" Height="450" Width="800">
+    <Grid>
+        <TextBlock x:Name="lista_zleceń" HorizontalAlignment="Left" Margin="129,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="389" Width="649"/>
+        <Button x:Name="wracaj_do_pokeballa_3" Content="Powrót" HorizontalAlignment="Left" Margin="31,21,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.135,0.047" Click="wracaj_do_pokeballa_3_Click"/>
+
+    </Grid>
+</Window>

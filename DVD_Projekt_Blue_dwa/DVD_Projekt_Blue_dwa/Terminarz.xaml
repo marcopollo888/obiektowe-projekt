@@ -5,25 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DVD_Projekt_Blue_dwa"
         mc:Ignorable="d"
-        Title="Terminarz" Height="599" Width="1094">
-    <Grid Height="578">
-        <Calendar x:Name="kalendarz_id1" Margin="98,34,817,379" SelectionMode="MultipleRange">
-            <Calendar.BlackoutDates>
-                <CalendarDateRange Start="01.13.2020" End="01.19.2020" />
-            </Calendar.BlackoutDates>
-        </Calendar>
-        <Calendar x:Name="kalendarz_id2" HorizontalAlignment="Left" Margin="406,34,0,0" VerticalAlignment="Top" Height="172" SelectionMode="MultipleRange"/>
-        <Calendar x:Name="kalendarz_id3" HorizontalAlignment="Left" Margin="730,34,0,0" VerticalAlignment="Top" Height="165" SelectionMode="MultipleRange"/>
-        <Calendar x:Name="kalendarz_id4" HorizontalAlignment="Left" Margin="98,289,0,0" VerticalAlignment="Top" Height="166" SelectionMode="MultipleRange"/>
-        <Calendar x:Name="kalendarz_id5" HorizontalAlignment="Left" Margin="406,289,0,0" VerticalAlignment="Top" Height="166" SelectionMode="MultipleRange"/>
-        <Calendar x:Name="kalendarz_id6" HorizontalAlignment="Left" Margin="730,289,0,0" VerticalAlignment="Top" Height="166" SelectionMode="MultipleRange"/>
-        <TextBlock HorizontalAlignment="Left" Margin="98,455,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="84" Width="179"/>
-        <TextBlock HorizontalAlignment="Left" Margin="98,204,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="179"/>
-        <TextBlock HorizontalAlignment="Left" Margin="408,204,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="174"/>
-        <TextBlock HorizontalAlignment="Left" Margin="730,204,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="179"/>
-        <TextBlock HorizontalAlignment="Left" Margin="406,455,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="84" Width="174"/>
-        <TextBlock HorizontalAlignment="Left" Margin="730,455,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="84" Width="179"/>
-        <Button x:Name="przycisk_id1" Content="Button" HorizontalAlignment="Left" Margin="98,40,0,0" VerticalAlignment="Top" Height="159" Width="179" Click="przycisk_id1_Click"/>
-
+        Title="Terminarz" Height="398" Width="716">
+    <Grid Height="360" Margin="10,0,10,0">
+        <Button x:Name="id1_button" Content="Wybierz" HorizontalAlignment="Left" Margin="76,137,0,0" VerticalAlignment="Top" IsEnabled="False" Click="id1_button_Click"/>
+        <Button x:Name="id2_button" Content="Wybierz" HorizontalAlignment="Left" Margin="326,137,0,0" VerticalAlignment="Top" IsEnabled="False" Click="id2_button_Click"/>
+        <Button x:Name="id3_button" Content="Wybierz" HorizontalAlignment="Left" Margin="564,137,0,0" VerticalAlignment="Top" IsEnabled="False" Click="id3_button_Click"/>
+        <Button x:Name="id4_button" Content="Wybierz" HorizontalAlignment="Left" Margin="76,306,0,0" VerticalAlignment="Top" IsEnabled="False" Click="id4_button_Click"/>
+        <Button x:Name="id5_button" Content="Wybierz" HorizontalAlignment="Left" Margin="326,301,0,0" VerticalAlignment="Top" IsEnabled="False" Click="id5_button_Click"/>
+        <Button x:Name="id6_button" Content="Wybierz" HorizontalAlignment="Left" Margin="564,301,0,0" VerticalAlignment="Top" IsEnabled="False" Click="id6_button_Click"/>
+        <TextBlock x:Name="id1_block" HorizontalAlignment="Left" Margin="34,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="106" Width="135"/>
+        <TextBlock x:Name="id2_block" HorizontalAlignment="Left" Margin="280,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="118" Width="152"/>
+        <TextBlock x:Name="id3_block" HorizontalAlignment="Left" Margin="516,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="105" Width="135"/>
+        <TextBlock x:Name="id4_block" HorizontalAlignment="Left" Margin="34,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="135"/>
+        <TextBlock x:Name="id5_block" HorizontalAlignment="Center" Margin="0,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="136"/>
+        <TextBlock x:Name="id6_block" HorizontalAlignment="Left" Margin="516,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="135"/>
     </Grid>
 </Window>

@@ -9,9 +9,9 @@
     <Grid Height="514" HorizontalAlignment="Left" Width="1074">
         <GroupBox Header="Szczegóły" Margin="585,22,108,155" FontSize="18" FontWeight="Bold"/>
         <Label Content="Zleceniodawca" HorizontalAlignment="Left" Margin="33,38,0,0" VerticalAlignment="Top" Height="26" Width="96"/>
-        <TextBox x:Name="nick_zleceniodawcy" HorizontalAlignment="Left" Margin="159,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="21" />
+        <TextBox x:Name="nick_zleceniodawcy" HorizontalAlignment="Left" Margin="159,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="21" />
         <Label Content="Usługa" HorizontalAlignment="Left" Margin="33,84,0,0" VerticalAlignment="Top" Width="107"/>
-        <ComboBox x:Name="typ_usługi" HorizontalAlignment="Left" Margin="159,88,0,0" VerticalAlignment="Top" Width="120" IsSynchronizedWithCurrentItem="True" BorderThickness="1,1,1,1" Height="21">
+        <ComboBox x:Name="typ_usługi" HorizontalAlignment="Left" Margin="159,88,0,0" VerticalAlignment="Top" Width="152" IsSynchronizedWithCurrentItem="True" BorderThickness="1,1,1,1" Height="21">
             <ComboBoxItem Content="soloq"/>
             <ComboBoxItem Content="duoq"/>
             <ComboBoxItem Content="coaching"/>
@@ -45,17 +45,18 @@
             <ComboBoxItem Content="Pretendent" FontWeight="Bold"/>
         </ComboBox>
         <Label x:Name="oczekiwana_dywizja" Content="oczekiwana dywizja" HorizontalAlignment="Left" Margin="611,121,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
-        <TextBox x:Name="mail_zleceniodawcy" HorizontalAlignment="Left" Margin="159,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="21"/>
+        <TextBox x:Name="mail_zleceniodawcy" HorizontalAlignment="Left" Margin="159,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="21"/>
         <Label Content="E-mail kontaktowy" HorizontalAlignment="Left" Margin="33,131,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="przewidywana_cena" HorizontalAlignment="Left" Margin="780,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" Height="32" IsEnabled="False" Visibility="Hidden"/>
         <Label x:Name="przewidz_to_ha_ha_ha" Content="Przewidywana cena" HorizontalAlignment="Left" Margin="759,211,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Visibility="Hidden"/>
         <Button x:Name="zamawiam" Content="Zamawiam i płacę" HorizontalAlignment="Left" Margin="680,302,0,0" VerticalAlignment="Top" Height="42" Width="183" FontSize="16" Visibility="Hidden" Click="zamawiam_Click"/>
-        <Button x:Name="wybierz_termin" Content="Wybierz termin" HorizontalAlignment="Left" Margin="159,181,0,0" VerticalAlignment="Top" Click="wybierz_termin_Click"/>
+        <Button x:Name="wybierz_pracownika" Content="Wybierz pracownika" HorizontalAlignment="Left" Margin="159,181,0,0" VerticalAlignment="Top" Click="wybierz_pracownika_Click"/>
         <Button x:Name="data_zlecenia" Content="Wybierz datę" HorizontalAlignment="Left" Margin="159,221,0,0" VerticalAlignment="Top" Click="data_zlecenia_Click"/>
         <DatePicker x:Name="wybierz_date_zlecenia" HorizontalAlignment="Left" Margin="260,219,0,0" VerticalAlignment="Top"/>
         <Button x:Name="oblicz" Content="Oblicz" HorizontalAlignment="Left" Margin="691,250,0,0" VerticalAlignment="Top" Height="26" Width="60" Click="oblicz_Click" Visibility="Hidden"/>
         <Button x:Name="potwierdzam_wybór" Content="Potwierdzam wybór" HorizontalAlignment="Left" Margin="156,343,0,0" VerticalAlignment="Top" Height="22" Width="123" Click="potwierdzam_wybór_Click"/>
         <Label x:Name="twoja_dywizja" Content="Twoja dywizja?" HorizontalAlignment="Left" Margin="611,55,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Button x:Name="wracaj_do_pokeballa_2" Content="Powrót" HorizontalAlignment="Left" Margin="23,13,0,0" VerticalAlignment="Top" Click="wracaj_do_pokeballa_2_Click"/>
 
     </Grid>
 </Window>

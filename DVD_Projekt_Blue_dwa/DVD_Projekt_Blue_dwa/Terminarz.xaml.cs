@@ -10,6 +10,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace DVD_Projekt_Blue_dwa
 {
@@ -19,49 +21,82 @@ namespace DVD_Projekt_Blue_dwa
     public partial class Terminarz : Window
     {
         public string id_terminarza;
+        public string xdd_id;
         public Terminarz()
         {
             InitializeComponent();
-            var path = System.IO.Path.Combine(Directory.GetCurrentDirectory() + "\\terminarz_1.db");
+            var path_2 = System.IO.Path.Combine(Directory.GetCurrentDirectory() + "\\pracownicy_wersja_RODO.db");
+            try
+            {
+                id1_block.Text = File.ReadLines(path_2).Skip(0).Take(1).First();
+                id2_block.Text = File.ReadLines(path_2).Skip(1).Take(1).First();
+                id3_block.Text = File.ReadLines(path_2).Skip(2).Take(1).First();
+                id4_block.Text = File.ReadLines(path_2).Skip(3).Take(1).First();
+                id5_block.Text = File.ReadLines(path_2).Skip(4).Take(1).First();
+                id6_block.Text = File.ReadLines(path_2).Skip(5).Take(1).First();
 
-            kalendarz_id2.BlackoutDates.Add(new CalendarDateRange(DateTime.Today, DateTime.Today.AddDays(1)));
-            kalendarz_id3.BlackoutDates.Add(new CalendarDateRange(DateTime.Today, DateTime.Today.AddDays(1)));
-            kalendarz_id4.BlackoutDates.Add(new CalendarDateRange(DateTime.Today, DateTime.Today.AddDays(1)));
-            kalendarz_id5.BlackoutDates.Add(new CalendarDateRange(DateTime.Today, DateTime.Today.AddDays(1)));
-            kalendarz_id6.BlackoutDates.Add(new CalendarDateRange(DateTime.Today, DateTime.Today.AddDays(1)));
+            }
+            catch (System.InvalidOperationException)
+            {
+
+            }
+            if (id1_block.Text != "")
+            {
+                id1_button.IsEnabled = true;
+            }
+            if (id2_block.Text != "")
+            {
+                id2_button.IsEnabled = true;
+            }
+            if (id3_block.Text != "")
+            {
+                id3_button.IsEnabled = true;
+            }
+            if (id4_block.Text != "")
+            {
+                id4_button.IsEnabled = true;
+            }
+            if (id5_block.Text != "")
+            {
+                id5_button.IsEnabled = true;
+            }
+            if (id6_block.Text != "")
+            {
+                id6_button.IsEnabled = true;
+            }
         }
 
-        private void przycisk_id1_Click(object sender, RoutedEventArgs e)
+        private void id1_button_Click(object sender, RoutedEventArgs e)
         {
-            
-            id_terminarza = "@1.";         
+            xdd_id = "@1.";
             this.Close();
         }
-        /* public void przycisk_id2_Click(object sender, RoutedEventArgs e)
-         {
-             zmienna = 2;
-             this.Close();
-         }
-         public void przycisk_id3_Click(object sender, RoutedEventArgs e)
-         {
-             zmienna = 3;
-             this.Close();
-         }
-         public void przycisk_id4_Click(object sender, RoutedEventArgs e)
-         {
-             zmienna = 4;
-             this.Close();
-         }
-         public void przycisk_id5_Click(object sender, RoutedEventArgs e)
-         {
-             zmienna = 5;
-             this.Close();
-         }
-         public void przycisk_id6_Click(object sender, RoutedEventArgs e)
-         {
-             zmienna = 6;
-             this.Close();
-         }
-         */
+        private void id2_button_Click(object sender, RoutedEventArgs e)
+        {
+            xdd_id = "@2.";
+            this.Close();
+        }
+        private void id3_button_Click(object sender, RoutedEventArgs e)
+        {
+            xdd_id = "@3.";
+            this.Close();
+        }
+        private void id4_button_Click(object sender, RoutedEventArgs e)
+        {
+            xdd_id = "@4.";
+            this.Close();
+        }
+        private void id5_button_Click(object sender, RoutedEventArgs e)
+        {
+            xdd_id = "@5.";
+            this.Close();
+        }
+        private void id6_button_Click(object sender, RoutedEventArgs e)
+        {
+            xdd_id = "@6.";
+            this.Close();
+        }
+
+ 
     }
 }

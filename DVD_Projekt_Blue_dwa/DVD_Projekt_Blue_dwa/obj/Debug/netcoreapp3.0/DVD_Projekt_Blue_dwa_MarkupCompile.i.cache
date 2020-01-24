@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_0
 C:\Users\Marek\Desktop\obiektowe-projekt-master\DVD_Projekt_Blue_dwa\DVD_Projekt_Blue_dwa\App.xaml
-5750567430
+6977020153
 
-7462162920
+81111131864
 199-1266433026
-MainWindow.xaml;Okno_Zleceń.xaml;Terminarz.xaml;terminarz_dostęp_gościnny.xaml;Window1.xaml;
+Archiwum_zleceń.xaml;Logowanie.xaml;MainWindow.xaml;Okno_Zleceń.xaml;Terminarz.xaml;Window1.xaml;
 
-True
+False
 

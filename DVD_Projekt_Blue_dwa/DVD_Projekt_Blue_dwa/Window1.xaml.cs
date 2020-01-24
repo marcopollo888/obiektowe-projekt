@@ -45,6 +45,7 @@ namespace DVD_Projekt_Blue_dwa
         {
 
             var path = System.IO.Path.Combine(Directory.GetCurrentDirectory() + "\\pracownicy.db");
+            var path_2 = System.IO.Path.Combine(Directory.GetCurrentDirectory() + "\\pracownicy_wersja_RODO.db");
 
             if ( Imię.Text == "" || Nazwisko.Text == "" || Nickname.Text == "" || Mail.Text == "" || Telefon.Text == "" || Dywizja.Text == "")
             {
@@ -60,6 +61,7 @@ namespace DVD_Projekt_Blue_dwa
                 {
                     string newLine = Environment.NewLine;
                     File.AppendAllText(path, id_pracownika.Text +"; " + Imię.Text + "; " + Nazwisko.Text + "; " + Nickname.Text + "; " + Dywizja.Text + "; " + Mail.Text + "; " + Telefon.Text + newLine);
+                    File.AppendAllText(path_2, Imię.Text + "; " + Nickname.Text + "; " + Dywizja.Text + "; " + Mail.Text + newLine);
                     MessageBox.Show("Dodano nowego pracownika.");
                     Imię.Text = null;
                     Nazwisko.Text = null;
@@ -101,6 +103,13 @@ namespace DVD_Projekt_Blue_dwa
             File.WriteAllLines(path, plik.ToArray());
             aktualizacja_id();
             Odśwież_Click(sender, e);
+        }
+
+        private void wracaj_do_pokeball_1_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow objMain_Window = new MainWindow();
+            objMain_Window.Show();
+            this.Close();
         }
     }
 }
