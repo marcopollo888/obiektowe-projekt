@@ -24,12 +24,27 @@ namespace DVD_Projekt_Blue_dwa
             InitializeComponent();
         }
 
-        private void Dodaj_Click(object sender, RoutedEventArgs e)
+        void aktualizacja_id()
         {
+            var path = System.IO.Path.Combine(Directory.GetCurrentDirectory() + "\\pracownicy.db");
             int i = 1;
             int licznik = 0;
+            do
+            {
+                string poszukiwane_id = "@" + i + ".";
+                if (!File.ReadAllText(path).Contains(poszukiwane_id))
+                {
+                    id_pracownika.Text = poszukiwane_id;
+                    licznik++;
+                }
+                i++;
+            } while (i != 7 && licznik != 1);
+        }
+
+        private void Dodaj_Click(object sender, RoutedEventArgs e)
+        {
+
             var path = System.IO.Path.Combine(Directory.GetCurrentDirectory() + "\\pracownicy.db");
-            var path_2 = System.IO.Path.Combine(Directory.GetCurrentDirectory() + "\\pracownicy_bez_wrażliwych_danych.db");
 
             if ( Imię.Text == "" || Nazwisko.Text == "" || Nickname.Text == "" || Mail.Text == "" || Telefon.Text == "" || Dywizja.Text == "")
             {
@@ -45,7 +60,6 @@ namespace DVD_Projekt_Blue_dwa
                 {
                     string newLine = Environment.NewLine;
                     File.AppendAllText(path, id_pracownika.Text +"; " + Imię.Text + "; " + Nazwisko.Text + "; " + Nickname.Text + "; " + Dywizja.Text + "; " + Mail.Text + "; " + Telefon.Text + newLine);
-                    File.AppendAllText(path_2, id_pracownika.Text + "; " + Nickname.Text + "; " + Dywizja.Text + newLine);
                     MessageBox.Show("Dodano nowego pracownika.");
                     Imię.Text = null;
                     Nazwisko.Text = null;
@@ -53,23 +67,13 @@ namespace DVD_Projekt_Blue_dwa
                     Mail.Text = null;
                     Telefon.Text = null;
                     Dywizja.Text = null;
-
-                    do
-                    {
-                        string poszukiwane_id = "@" + i + ".";
-                        if (!File.ReadAllText(path).Contains(poszukiwane_id))
-                        {
-                            id_pracownika.Text = poszukiwane_id;
-                            licznik++;
-                        }
-                        i++;
-                    } while (i != 7 && licznik != 1);
+                    id_pracownika.Text = null;
+                    aktualizacja_id();
+                    Odśwież_Click(sender, e);
                     if (File.ReadAllLines(path).Length >= 6)
                     {
                         MessageBox.Show("Uruchamiam pokazywanie zespołu, jednak nabór zostaje wyłączony, ze względu na limit miejsc");
-                        id_pracownika = null;
                     }
-
                 }
 
             }
@@ -84,7 +88,19 @@ namespace DVD_Projekt_Blue_dwa
 
         private void usuń_pracownika_Click(object sender, RoutedEventArgs e)
         {
-
+            string szukaj = lista_usuwalnych.Text;
+            var path = System.IO.Path.Combine(Directory.GetCurrentDirectory() + "\\pracownicy.db");
+            var plik = new List<string>(System.IO.File.ReadAllLines(path));
+            for (int i = plik.Count() - 1; i >= 0; i--)
+            {
+                if (plik[i].Contains(szukaj))
+                {
+                    plik.RemoveAt(i);
+                }
+            }
+            File.WriteAllLines(path, plik.ToArray());
+            aktualizacja_id();
+            Odśwież_Click(sender, e);
         }
     }
 }

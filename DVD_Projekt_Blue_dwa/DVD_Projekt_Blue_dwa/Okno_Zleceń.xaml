@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Zlecenia" Height="445" Width="984">
     <Grid Height="514" HorizontalAlignment="Left" Width="1074">
+        <GroupBox Header="Szczegóły" Margin="585,22,108,155" FontSize="18" FontWeight="Bold"/>
         <Label Content="Zleceniodawca" HorizontalAlignment="Left" Margin="33,38,0,0" VerticalAlignment="Top" Height="26" Width="96"/>
         <TextBox x:Name="nick_zleceniodawcy" HorizontalAlignment="Left" Margin="159,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="21" />
         <Label Content="Usługa" HorizontalAlignment="Left" Margin="33,84,0,0" VerticalAlignment="Top" Width="107"/>
@@ -15,14 +16,13 @@
             <ComboBoxItem Content="duoq"/>
             <ComboBoxItem Content="coaching"/>
         </ComboBox>
-        <GroupBox Header="Dywizja" Margin="586,22,113,174" FontSize="18" FontWeight="Bold" Visibility="Visible"/>
-        <Label Content="aktualny dywizja" HorizontalAlignment="Left" Margin="611,55,0,0" VerticalAlignment="Top"/>
-        <GroupBox Header="numer dywizji" Margin="801,39,174,370"/>
-        <CheckBox x:Name="I" Content="I" HorizontalAlignment="Left" Margin="820,61,0,0" VerticalAlignment="Top" Checked="I_Checked" RenderTransformOrigin="0.475,0.731"/>
-        <CheckBox x:Name="II" Content="II" HorizontalAlignment="Left" Margin="820,81,0,0" VerticalAlignment="Top" Checked="II_Checked"/>
-        <CheckBox x:Name="III" Content="III" HorizontalAlignment="Left" Margin="819,101,0,0" VerticalAlignment="Top" Checked="III_Checked"/>
-        <CheckBox x:Name="IV" Content="IV" HorizontalAlignment="Left" Margin="819,121,0,0" VerticalAlignment="Top" Checked="IV_Checked" RenderTransformOrigin="3.021,0.698"/>
-        <ComboBox x:Name="dywizja_aktualna" HorizontalAlignment="Left" Margin="611,78,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="dywizja_aktualna_SelectionChanged">
+        <Label x:Name="aktualna_dywizja" Content="aktualna dywizja" HorizontalAlignment="Left" Margin="611,55,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <GroupBox x:Name="godzinki" Header="godziny" Margin="810,67,177,342" Visibility="Hidden"/>
+        <CheckBox x:Name="I" Content="8-16" HorizontalAlignment="Left" Margin="819,91,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.475,0.731" Checked="I_Checked" Visibility="Hidden"/>
+        <CheckBox x:Name="II" Content="16-24" HorizontalAlignment="Left" Margin="819,108,0,0" VerticalAlignment="Top" Checked="II_Checked" Visibility="Hidden"/>
+        <CheckBox x:Name="III" Content="24-8" HorizontalAlignment="Left" Margin="819,126,0,0" VerticalAlignment="Top" Checked="III_Checked" Visibility="Hidden"/>
+        <CheckBox x:Name="dowolny_checkbox" Content="dowolnie" HorizontalAlignment="Left" Margin="819,143,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.021,0.698" Checked="dowolny_checkbox_Checked" Visibility="Hidden"/>
+        <ComboBox x:Name="dywizja_aktualna" HorizontalAlignment="Left" Margin="611,78,0,0" VerticalAlignment="Top" Width="120" Visibility="Hidden" >
             <ComboBoxItem Content="Żelazo" FontWeight="Bold"/>
             <ComboBoxItem Content="Brąz" FontWeight="Bold"/>
             <ComboBoxItem Content="Srebro" FontWeight="Bold"/>
@@ -33,7 +33,7 @@
             <ComboBoxItem Content="Arcymistrz" FontWeight="Bold"/>
             <ComboBoxItem Content="Pretendent" IsEnabled="False" FontStretch="Medium"/>
         </ComboBox>
-        <ComboBox x:Name="dywizja_oczekiwana" HorizontalAlignment="Left" Margin="611,254,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="dywizja_oczekiwana_SelectionChanged">
+        <ComboBox x:Name="dywizja_oczekiwana" HorizontalAlignment="Left" Margin="611,144,0,0" VerticalAlignment="Top" Width="120" Visibility="Hidden" >
             <ComboBoxItem Content="Żelazo" IsEnabled="False" FontStretch="Medium"/>
             <ComboBoxItem Content="Brąz" FontWeight="Bold"/>
             <ComboBoxItem Content="Srebro" FontWeight="Bold"/>
@@ -44,19 +44,18 @@
             <ComboBoxItem Content="Arcymistrz" FontWeight="Bold"/>
             <ComboBoxItem Content="Pretendent" FontWeight="Bold"/>
         </ComboBox>
-        <Label Content="oczekiwana dywizja" HorizontalAlignment="Left" Margin="611,228,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="oczekiwana_dywizja" Content="oczekiwana dywizja" HorizontalAlignment="Left" Margin="611,121,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
         <TextBox x:Name="mail_zleceniodawcy" HorizontalAlignment="Left" Margin="159,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="21"/>
         <Label Content="E-mail kontaktowy" HorizontalAlignment="Left" Margin="33,131,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="lp_za_grę" HorizontalAlignment="Left" Margin="611,173,0,0" VerticalAlignment="Top" Width="120">
-            <ComboBoxItem Content="maksymalnie 15"/>
-            <ComboBoxItem Content="minimalnie 16"/>
-        </ComboBox>
-        <Label Content="Punkty Ligowe  za wygraną grę" HorizontalAlignment="Left" Margin="611,147,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="przewidywana_cena" HorizontalAlignment="Left" Margin="780,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" Height="32" IsEnabled="False"/>
-        <Label Content="Przewidywana cena" HorizontalAlignment="Left" Margin="759,211,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Button Content="Zamawiam i płacę" HorizontalAlignment="Left" Margin="666,289
-                ,0,0" VerticalAlignment="Top" Height="42" Width="183" FontSize="16"/>
+        <TextBox x:Name="przewidywana_cena" HorizontalAlignment="Left" Margin="780,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" Height="32" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="przewidz_to_ha_ha_ha" Content="Przewidywana cena" HorizontalAlignment="Left" Margin="759,211,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Visibility="Hidden"/>
+        <Button x:Name="zamawiam" Content="Zamawiam i płacę" HorizontalAlignment="Left" Margin="680,302,0,0" VerticalAlignment="Top" Height="42" Width="183" FontSize="16" Visibility="Hidden" Click="zamawiam_Click"/>
         <Button x:Name="wybierz_termin" Content="Wybierz termin" HorizontalAlignment="Left" Margin="159,181,0,0" VerticalAlignment="Top" Click="wybierz_termin_Click"/>
-        <Calendar x:Name="kalendarz_zleceń" HorizontalAlignment="Left" Margin="159,207,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+        <Button x:Name="data_zlecenia" Content="Wybierz datę" HorizontalAlignment="Left" Margin="159,221,0,0" VerticalAlignment="Top" Click="data_zlecenia_Click"/>
+        <DatePicker x:Name="wybierz_date_zlecenia" HorizontalAlignment="Left" Margin="260,219,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="oblicz" Content="Oblicz" HorizontalAlignment="Left" Margin="691,250,0,0" VerticalAlignment="Top" Height="26" Width="60" Click="oblicz_Click" Visibility="Hidden"/>
+        <Button x:Name="potwierdzam_wybór" Content="Potwierdzam wybór" HorizontalAlignment="Left" Margin="156,343,0,0" VerticalAlignment="Top" Height="22" Width="123" Click="potwierdzam_wybór_Click"/>
+        <Label x:Name="twoja_dywizja" Content="Twoja dywizja?" HorizontalAlignment="Left" Margin="611,55,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+
     </Grid>
 </Window>

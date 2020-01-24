@@ -42,7 +42,7 @@ namespace DVD_Projekt_Blue_dwa
                     licznik++;
                 }
                 i++;
-            } while (i!=6 && licznik != 1);
+            } while (i!=7 && licznik != 1);
             if (File.ReadAllLines(path).Length >= 7)
              {
                 MessageBox.Show("Uruchamiam pokazywanie zespołu, jednak nabór zostaje wyłączony, ze względu na limit miejsc");

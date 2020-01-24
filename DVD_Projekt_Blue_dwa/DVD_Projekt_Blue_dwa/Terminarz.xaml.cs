@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -17,10 +18,12 @@ namespace DVD_Projekt_Blue_dwa
     /// </summary>
     public partial class Terminarz : Window
     {
-        int zmienna;
+        public string id_terminarza;
         public Terminarz()
         {
             InitializeComponent();
+            var path = System.IO.Path.Combine(Directory.GetCurrentDirectory() + "\\terminarz_1.db");
+
             kalendarz_id2.BlackoutDates.Add(new CalendarDateRange(DateTime.Today, DateTime.Today.AddDays(1)));
             kalendarz_id3.BlackoutDates.Add(new CalendarDateRange(DateTime.Today, DateTime.Today.AddDays(1)));
             kalendarz_id4.BlackoutDates.Add(new CalendarDateRange(DateTime.Today, DateTime.Today.AddDays(1)));
@@ -30,7 +33,8 @@ namespace DVD_Projekt_Blue_dwa
 
         private void przycisk_id1_Click(object sender, RoutedEventArgs e)
         {
-            zmienna = 1;
+            
+            id_terminarza = "@1.";         
             this.Close();
         }
         /* public void przycisk_id2_Click(object sender, RoutedEventArgs e)

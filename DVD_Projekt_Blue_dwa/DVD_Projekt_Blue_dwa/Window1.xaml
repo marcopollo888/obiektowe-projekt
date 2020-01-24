@@ -30,7 +30,7 @@
             <ComboBoxItem Content="Srebro" IsEnabled="False" FontWeight="Bold"/>
             <ComboBoxItem Content="Złoto" IsEnabled="False" FontWeight="Bold"/>
             <ComboBoxItem Content="Platyna" IsEnabled="False" FontWeight="Bold"/>
-            <ComboBoxItem Content="Diament" IsEnabled="False" FontWeight="Bold"/>
+            <ComboBoxItem Content="Diament" FontWeight="Bold"/>
             <ComboBoxItem Content="Mistrz" FontWeight="Bold"/>
             <ComboBoxItem Content="Arcymistrz" FontWeight="Bold"/>
             <ComboBoxItem Content="Pretendent" FontWeight="Bold"/>
@@ -45,6 +45,14 @@
         <Label Content="Lista pracowników" HorizontalAlignment="Left" Margin="313,26,0,0" VerticalAlignment="Top"/>
         <Label Content="id" HorizontalAlignment="Left" Margin="94,13,0,0" VerticalAlignment="Top"/>
         <Button x:Name="usuń_pracownika" Content="Usuń Pracownika" HorizontalAlignment="Left" Margin="253,367,0,0" VerticalAlignment="Top" Click="usuń_pracownika_Click"/>
+        <ComboBox x:Name="lista_usuwalnych" HorizontalAlignment="Left" Margin="104,367,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="@1." FontWeight="Bold"/>
+            <ComboBoxItem Content="@2." FontWeight="Bold"/>
+            <ComboBoxItem Content="@3." FontWeight="Bold"/>
+            <ComboBoxItem Content="@4." FontWeight="Bold"/>
+            <ComboBoxItem Content="@5." FontWeight="Bold"/>
+            <ComboBoxItem Content="@6." FontWeight="Bold"/>
+        </ComboBox>
 
 
     </Grid>
